@@ -13,7 +13,7 @@ const MoviesGrid = () => {
     const getData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=8d155a452063365b70d7e38e2609b662`);
+        const response = await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=5d9c2af1944cf22642d69124e01aa3d8`);
         const responseData = response.data.results;
         setData1(responseData);
         setLoading(false);

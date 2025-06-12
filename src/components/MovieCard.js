@@ -16,7 +16,7 @@ const MovieCard = ({ name, image, id }) => {
         </div>
 
         <div className="p-4 flex flex-col flex-grow justify-between">
-          <h3 className="text-lg font-semibold mb-2">{name}</h3>
+          <h3 className="text-lg font-semibold mb-3 ">{name}</h3>
         </div>
       </div>
     </Link>
