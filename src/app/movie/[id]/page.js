@@ -1,12 +1,13 @@
-import React from "react";
-import MovieContainer from "@/components/MovieContainer";
+"use client";
 
-const Movie = async ({params}) => {
-    const {id} = await params;
+import MovieContainer from "@/app/components/MovieContainer";
 
-    return(
-        <MovieContainer id ={id}/>
-    )
+export default function MoviePage({ params }) {
+  const { id } = params;
+
+  return (
+    <main className="min-h-screen p-8 text-white">
+      <MovieContainer id={id} />
+    </main>
+  );
 }
-
-export default Movie
